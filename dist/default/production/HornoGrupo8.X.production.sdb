@@ -1,0 +1,718 @@
+[p GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F886 ]
+[d frameptr 0 ]
+"43 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\controlador3.c
+[e E1331 estado `uc
+LeerPotenciometro 0
+Sensores_Actuadores 1
+MostrarDatos 2
+Esperar 3
+Apagar 4
+]
+"21 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\actuadores.c
+[v _init_PWM_CCP1 init_PWM_CCP1 `(v  1 e 1 0 ]
+"33
+[v _init_timer2 init_timer2 `(v  1 e 1 0 ]
+"40
+[v _set_up_Actuadores set_up_Actuadores `(v  1 e 1 0 ]
+"57
+[v _set_Refrigerador set_Refrigerador `(v  1 e 1 0 ]
+"65
+[v _set_Calefactor set_Calefactor `(v  1 e 1 0 ]
+"72
+[v _set_Ventilador set_Ventilador `(v  1 e 1 0 ]
+"78
+[v _logica_Actuadores logica_Actuadores `(v  1 e 1 0 ]
+"111
+[v _get_velocidad_ventilador get_velocidad_ventilador `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"477 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"17 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"31 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\controlador3.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+"46
+[v _Handler Handler `II(v  1 e 1 0 ]
+"76
+[v _main main `(v  1 e 1 0 ]
+"14 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\display.c
+[v _init_uart init_uart `(v  1 e 1 0 ]
+"38
+[v _putch putch `(v  1 e 1 0 ]
+"44
+[v _mensajeBienvenida mensajeBienvenida `(v  1 e 1 0 ]
+"48
+[v _mostrarConsigna mostrarConsigna `(v  1 e 1 0 ]
+"52
+[v _mostrarDatos mostrarDatos `(v  1 e 1 0 ]
+"14 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _set_up_Sensores set_up_Sensores `(v  1 e 1 0 ]
+"50
+[v _read_temperatura_interior read_temperatura_interior `(v  1 e 1 0 ]
+"71
+[v _get_temperatura_interior get_temperatura_interior `(i  1 e 2 0 ]
+"76
+[v _read_temperatura_exterior read_temperatura_exterior `(v  1 e 1 0 ]
+"101
+[v _get_temperatura_exterior get_temperatura_exterior `(i  1 e 2 0 ]
+"106
+[v _read_humedad read_humedad `(v  1 e 1 0 ]
+"130
+[v _get_humedad get_humedad `(i  1 e 2 0 ]
+"134
+[v _read_intensidad_lumninosa read_intensidad_lumninosa `(v  1 e 1 0 ]
+"157
+[v _get_intensidad_luminosa get_intensidad_luminosa `(i  1 e 2 0 ]
+"162
+[v _read_potenciometro read_potenciometro `(v  1 e 1 0 ]
+"187
+[v _get_tempObjetivo get_tempObjetivo `(i  1 e 2 0 ]
+"197
+[v _get_lastPotenciometro get_lastPotenciometro `(f  1 e 3 0 ]
+"15 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\actuadores.c
+[v _vent vent `f  1 e 3 0 ]
+"16
+[v _tempInt tempInt `i  1 e 2 0 ]
+"17
+[v _tempObj tempObj `i  1 e 2 0 ]
+"18
+[v _diferencia diferencia `i  1 e 2 0 ]
+"19
+[v _errorMaximo errorMaximo `f  1 e 3 0 ]
+"60 C:\Program Files\Microchip\xc8\v2.30\pic\include\proc\pic16f886.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S540 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"246
+[u S549 . 1 `S540 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES549  1 e 1 @6 ]
+[s S519 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"308
+[u S528 . 1 `S519 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES528  1 e 1 @7 ]
+[s S668 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"404
+[s S677 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S682 . 1 `S668 1 . 1 0 `S677 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES682  1 e 1 @11 ]
+[s S700 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"475
+[u S708 . 1 `S700 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES708  1 e 1 @12 ]
+[s S445 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"715
+[s S449 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S457 . 1 `S445 1 . 1 0 `S449 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES457  1 e 1 @18 ]
+"849
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+[s S406 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+"890
+[s S410 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[s S419 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CCP1Y 1 0 :1:4 
+`uc 1 CCP1X 1 0 :1:5 
+]
+[u S423 . 1 `S406 1 . 1 0 `S410 1 . 1 0 `S419 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES423  1 e 1 @23 ]
+[s S288 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"990
+[s S297 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S301 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S304 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S307 . 1 `S288 1 . 1 0 `S297 1 . 1 0 `S301 1 . 1 0 `S304 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES307  1 e 1 @24 ]
+"1055
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1160
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S79 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1198
+[s S84 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S93 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S96 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S99 . 1 `S79 1 . 1 0 `S84 1 . 1 0 `S93 1 . 1 0 `S96 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES99  1 e 1 @31 ]
+[s S635 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1288
+[s S642 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S646 . 1 `S635 1 . 1 0 `S642 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES646  1 e 1 @129 ]
+[s S39 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1417
+[u S48 . 1 `S39 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES48  1 e 1 @134 ]
+"1462
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S474 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1479
+[u S483 . 1 `S474 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES483  1 e 1 @135 ]
+[s S60 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1561
+[u S68 . 1 `S60 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES68  1 e 1 @140 ]
+"1705
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"1884
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+[s S228 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2425
+[s S237 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S241 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S244 . 1 `S228 1 . 1 0 `S237 1 . 1 0 `S241 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES244  1 e 1 @152 ]
+"2485
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2547
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @154 ]
+"2813
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S125 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2834
+[u S131 . 1 `S125 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES131  1 e 1 @159 ]
+[s S265 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3195
+[u S274 . 1 `S265 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES274  1 e 1 @391 ]
+[s S22 . 1 `uc 1 ANS8 1 0 :1:0 
+`uc 1 ANS9 1 0 :1:1 
+`uc 1 ANS10 1 0 :1:2 
+`uc 1 ANS11 1 0 :1:3 
+`uc 1 ANS12 1 0 :1:4 
+`uc 1 ANS13 1 0 :1:5 
+]
+"3289
+[u S29 . 1 `S22 1 . 1 0 ]
+[v _ANSELHbits ANSELHbits `VES29  1 e 1 @393 ]
+"4294
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"358 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"40 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\controlador3.c
+[v _cont cont `i  1 e 2 0 ]
+"43
+[v _estadoActual estadoActual `E1331  1 e 1 0 ]
+"44
+[v _estadoInterrupcion estadoInterrupcion `E1331  1 e 1 0 ]
+"8 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.h
+[v _tempint tempint `i  1 e 2 0 ]
+"9
+[v _tempext tempext `i  1 e 2 0 ]
+"10
+[v _humedad humedad `i  1 e 2 0 ]
+"11
+[v _lum lum `i  1 e 2 0 ]
+"13
+[v _sumaLecturas sumaLecturas `i  1 e 2 0 ]
+"14
+[v _numeroLecturas numeroLecturas `i  1 e 2 0 ]
+"15
+[v _tempObjetivo tempObjetivo `i  1 e 2 0 ]
+"16
+[v _lastPotenciometro lastPotenciometro `f  1 e 3 0 ]
+"18
+[v _ADCready ADCready `i  1 e 2 0 ]
+"76 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\controlador3.c
+[v _main main `(v  1 e 1 0 ]
+{
+"164
+} 0
+"14 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _set_up_Sensores set_up_Sensores `(v  1 e 1 0 ]
+{
+"48
+} 0
+"40 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\actuadores.c
+[v _set_up_Actuadores set_up_Actuadores `(v  1 e 1 0 ]
+{
+"55
+} 0
+"33
+[v _init_timer2 init_timer2 `(v  1 e 1 0 ]
+{
+"38
+} 0
+"21
+[v _init_PWM_CCP1 init_PWM_CCP1 `(v  1 e 1 0 ]
+{
+"31
+} 0
+"50 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _read_temperatura_interior read_temperatura_interior `(v  1 e 1 0 ]
+{
+"66
+[v read_temperatura_interior@lecturaV lecturaV `f  1 a 3 0 ]
+"51
+[v read_temperatura_interior@lectura lectura `i  1 a 2 6 ]
+"69
+} 0
+"76
+[v _read_temperatura_exterior read_temperatura_exterior `(v  1 e 1 0 ]
+{
+"96
+[v read_temperatura_exterior@lecturaV lecturaV `f  1 a 3 17 ]
+"81
+[v read_temperatura_exterior@Tc Tc `f  1 a 3 14 ]
+"80
+[v read_temperatura_exterior@V0 V0 `f  1 a 3 11 ]
+"78
+[v read_temperatura_exterior@lectura lectura `i  1 a 2 23 ]
+"99
+} 0
+"17 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 43 ]
+[v ___ftsub@f1 f1 `f  1 p 3 46 ]
+"26
+} 0
+"162 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _read_potenciometro read_potenciometro `(v  1 e 1 0 ]
+{
+"177
+[v read_potenciometro@lecturaV lecturaV `f  1 a 3 15 ]
+"163
+[v read_potenciometro@lectura lectura `i  1 a 2 13 ]
+"164
+[v read_potenciometro@aux aux `i  1 a 2 11 ]
+"185
+} 0
+"134
+[v _read_intensidad_lumninosa read_intensidad_lumninosa `(v  1 e 1 0 ]
+{
+"150
+[v read_intensidad_lumninosa@lecturaV lecturaV `f  1 a 3 11 ]
+"135
+[v read_intensidad_lumninosa@lectura lectura `i  1 a 2 17 ]
+"155
+} 0
+"106
+[v _read_humedad read_humedad `(v  1 e 1 0 ]
+{
+"121
+[v read_humedad@lecturaV lecturaV `f  1 a 3 11 ]
+"107
+[v read_humedad@lectura lectura `i  1 a 2 17 ]
+"128
+} 0
+"86 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 26 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 25 ]
+[v ___ftadd@sign sign `uc  1 a 1 24 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 14 ]
+[v ___ftadd@f2 f2 `f  1 p 3 17 ]
+"148
+} 0
+"52 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\display.c
+[v _mostrarDatos mostrarDatos `(v  1 e 1 0 ]
+{
+"66
+} 0
+"111 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\actuadores.c
+[v _get_velocidad_ventilador get_velocidad_ventilador `(i  1 e 2 0 ]
+{
+"113
+} 0
+"101 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _get_temperatura_exterior get_temperatura_exterior `(i  1 e 2 0 ]
+{
+"104
+} 0
+"157
+[v _get_intensidad_luminosa get_intensidad_luminosa `(i  1 e 2 0 ]
+{
+"160
+} 0
+"130
+[v _get_humedad get_humedad `(i  1 e 2 0 ]
+{
+"132
+} 0
+"48 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\display.c
+[v _mostrarConsigna mostrarConsigna `(v  1 e 1 0 ]
+{
+"50
+} 0
+"44
+[v _mensajeBienvenida mensajeBienvenida `(v  1 e 1 0 ]
+{
+"46
+} 0
+"78 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\actuadores.c
+[v _logica_Actuadores logica_Actuadores `(v  1 e 1 0 ]
+{
+"109
+} 0
+"72
+[v _set_Ventilador set_Ventilador `(v  1 e 1 0 ]
+{
+[v set_Ventilador@intensidad intensidad `i  1 p 2 73 ]
+"76
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"57 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\actuadores.c
+[v _set_Refrigerador set_Refrigerador `(v  1 e 1 0 ]
+{
+[v set_Refrigerador@on on `i  1 p 2 0 ]
+"63
+} 0
+"65
+[v _set_Calefactor set_Calefactor `(v  1 e 1 0 ]
+{
+[v set_Calefactor@on on `i  1 p 2 0 ]
+"70
+} 0
+"477 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"545
+[v printf@val val `ui  1 a 2 6 ]
+"512
+[v printf@c c `uc  1 a 1 8 ]
+"521
+[v printf@prec prec `c  1 a 1 5 ]
+"525
+[v printf@flag flag `uc  1 a 1 4 ]
+"479
+[v printf@ap ap `[1]*.4v  1 a 1 3 ]
+"477
+[v printf@f f `*.25DCuc  1 p 2 75 ]
+"1567
+} 0
+"38 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\display.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 0 ]
+"42
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"71 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _get_temperatura_interior get_temperatura_interior `(i  1 e 2 0 ]
+{
+"74
+} 0
+"187
+[v _get_tempObjetivo get_tempObjetivo `(i  1 e 2 0 ]
+{
+"195
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 13 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 12 ]
+[v ___awdiv@counter counter `uc  1 a 1 11 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 6 ]
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+"41
+} 0
+"197 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\sensores.c
+[v _get_lastPotenciometro get_lastPotenciometro `(f  1 e 3 0 ]
+{
+"199
+} 0
+"44 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 68 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 72 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 67 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 59 ]
+"73
+} 0
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 54 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 58 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 57 ]
+[v ___ftmul@exp exp `uc  1 a 1 53 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 43 ]
+[v ___ftmul@f2 f2 `f  1 p 3 46 ]
+"157
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 14 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 17 ]
+"13
+} 0
+"56 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 38 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 42 ]
+[v ___ftdiv@exp exp `uc  1 a 1 41 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 37 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 27 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 30 ]
+"86
+} 0
+"32 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"14 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\display.c
+[v _init_uart init_uart `(v  1 e 1 0 ]
+{
+"35
+} 0
+"31 C:\Users\Carlos David\OneDrive - Universidad Politécnica de Madrid\Universidad\4º\SE\HornoGrupo8.X\controlador3.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+{
+"36
+} 0
+"46
+[v _Handler Handler `II(v  1 e 1 0 ]
+{
+"74
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
